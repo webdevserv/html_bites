@@ -13,14 +13,15 @@
 /* small screen */
 @media only screen and (max-width:540px) {
 	body,html {
-    background-image:url(images/bg359_438.png);
+    background-image:url(images/bg359_438_1.png);
     background-repeat:no-repeat;
-    background-color:#83bd86;
+    background-color:#1b2228;
     background-position:center;
     min-height:100%; 
 	} 
 	.w3-container,.w3-panel {padding:0em 0px;}
-	.w3-button:hover {color:#000;cursor:pointer;}
+	.fa-bars{color:#fff;}
+	.w3-button:hover {color:#fff;cursor:pointer;}
 	.header {font-size:35px;display:inline-flex;margin-left:20px!important;margin-right:20px!important;}
 	.sub_header {font-size:26px;display:inline-flex;margin-left:20px!important;margin-right:20px!important;}
 	.main_body{margin-left:20px!important;margin-top:0px!important;}
@@ -34,15 +35,16 @@
 /* medium screen */
 @media only screen and (min-width:541px) and (max-width:912px) {
     body,html {
-    background-image:url(images/bg800_660.png);
+    background-image:url(images/bg800_660_1.png);
     background-repeat:no-repeat;
-    background-color:#83bd86; 
+    background-color:#1b2228;
     /* background-attachment:fixed; */
     min-height:100%;} 
 	.main_body{margin-left:32px!important;}
-	.w3-button:hover {color:#000;background-color:#e7ffb2!important;cursor:pointer;}
+	.w3-button:hover {color:#000;background-color:transparent!important;cursor:pointer;}
     .header {font-size:64px;}
 	.sub_header {font-size:40px;}
+	.fa-bars{color:#fff;}
 	.latin{font-size:20px;}
 	.latin_div{width:55%!important;}
 	.button_text{font-size:18px;}
@@ -52,15 +54,15 @@
 	}
 }
 /* large screen */
-@media only screen and  (min-width:913px)  {
+@media only screen and (min-width:913px)  {
 	body,html {
-	background-image:url(images/bg1440_1024.png);
+	background-image:url(images/bg1440_1024_1.png);
     background-repeat:no-repeat;
-    background-color:#83bd86;   
+    background-color:#1b2228; 
 	background-position:center;
     /* min-height:100%; */
     } 
-	.w3-button:hover {color:#000;background-color:#e7ffb2!important;cursor:pointer;}
+	.w3-button:hover {color:#000;background-color:transparent!important;cursor:pointer;}
 	.w3-menubar-item {font-size:22px!important;}
 	.header {font-size:80px;padding-top:10px;}
 	.sub_header {font-size:64px;}
@@ -71,7 +73,7 @@
 
 /*navegation*/
 .w3-menubar-item {
-	color:rgba(0,0,0,1);
+	color:#c89944;
     top:10px;
     font-family:Hind;
     text-align:left;
@@ -94,7 +96,7 @@ a {
 	top:10px;	
 }
 .company { 
-	color:rgba(0,0,0,1);	
+	color:#dd5c46;	
 	font-family:Bubbler One;
 	text-align:left;
 	font-size:64px;
@@ -108,13 +110,13 @@ a {
 	letter-spacing:0;
 }
 .header{ 
-	color:rgba(217.8125050663948,84.40234780311584,111.53659299015999,1);	
+	color:#4bc29a;	
 	font-family:Leckerli One;
 	text-align:left;
 	letter-spacing:0;
 }
 .sub_header{ 
-	color:rgba(17.00000088661909,41.00000135600567,4.000000236555934,1);	
+	color:#a14ab8;
 	font-family:Leckerli One;
 	text-align:left;
 	letter-spacing:0;
@@ -124,12 +126,12 @@ a {
 	width:80%;
 	display:flex;
     flex-wrap:wrap;
+	color:#c89944;
 }
 .latin { 
-	color:rgba(0,0,0,1);	
+	color:#c89944;
 	font-family:Hind;
 	text-align:left;
-	/* font-size:24px; */
 	letter-spacing:0;
 }
 .buttons_div { 
@@ -138,13 +140,13 @@ a {
 .cell_buttons_div { 
 	margin:0px;
 	padding:20px 0px 20px 0px;
-	background-color:black;	
+	background-color:#4bc29a;		
 }
 .left_button { 
-	background-color:rgba(243.00000071525574,211.00000262260437,56.000000461936,1);	
+	background-color:#c89944;
 }
 .right_button { 
-	background-color:rgba(255,255,255,1);	
+	background-color:#fff;
 }
 .button_adj {
 	height:70px!important;
@@ -164,7 +166,7 @@ a {
 	letter-spacing:0;
 }
 .cell_body{margin-left:0px;margin-right:0px;margin-top:0px!important;padding-top:180px!important;text-align:center;text-align:center;}	
-.w3-button { padding-inline:20px;}	
+.w3-button {padding-inline:20px;}	
 .w3-bar-block .w3-bar-item {padding:8px 4px 8px 4px;}
 .w3-display-topright {padding:0px!important;}
 </style>
@@ -179,7 +181,7 @@ a {
 				</a>
 			</div>		
 			<div id="navSmall" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-				<a href="#flavors" class="w3-bar-item w3-button" >FLAVORS</a>
+				<a href="#products" class="w3-bar-item w3-button">PRODUCTS</a>
 				<a href="#locations" class="w3-bar-item w3-button">LOCATIONS</a>
 				<a href="#" class="w3-bar-item w3-button">SEARCH</a>
 			</div>   
@@ -188,24 +190,24 @@ a {
 		<div class="w3-top">						
 			<div class="w3-menubar">				
 				<a class="w3-menubar-item w3-button w3-hide-small" href="#">HOME</a>
-				<a class="w3-menubar-item w3-button w3-hide-small" href="#">FLAVORS</a>
+				<a class="w3-menubar-item w3-button w3-hide-small" href="#">PRODUCTS</a>
 				<a class="w3-menubar-item w3-button w3-hide-small" href="#">LOCATIONS</a>
 			</div>						
 		</div><!-- // large-med screens -->
         <div class="main_body">
-			<div class="company">buzzcream</div><div  class="motto">FAVE TASTE</div>
-			<div class="header w3-hide-small">Buzz your<br/>tastebuds</div><div class="sub_header w3-hide-small">not the calories</div>		
+			<div class="company">recyclon</div><div  class="motto">DO YOUR BIT</div>
+			<div class="header w3-hide-small">Clean your<br/>planet</div><div class="sub_header w3-hide-small">action now</div>		
 			<div class="latin_div w3-hide-small"><span class="latin">Lorem ipsum dolor sit amet,consectetur adipiscing elit. Donec a turpis massa. Maecenas vel sapien hendrerit nisl aliquet elementum ac in erat. o nec fringilla. Maecenas varius vel porta.</span></div>
 			<div class="buttons_div w3-hide-small">
-				<span class="button_adj left_button"><a href="#"><span  class="button_text">book tasting</span></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="button_adj right_button"><a href="#"><span  class="button_text">buzz menu</span></a></span>
+				<span class="button_adj left_button"><a href="#"><span  class="button_text">book now</span></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="button_adj right_button"><a href="#"><span  class="button_text">options</span></a></span>
 			</div><!-- // buttons_div -->
         </div><!-- // main_body -->		
     </div><!--// w3-content -->
 	<div class="cell_body w3-hide-medium w3-hide-large">
 		    <div style="margin-top:35px;">&nbsp;</div>
-			<div class="header">Buzz your tastebuds</div><div class="sub_header">not the calories</div>		
+			<div class="header">Clean your planet</div><div class="sub_header">action now</div>		
 			<div class="cell_buttons_div">
-				<span class="button_adj left_button"><a href="#"><span  class="button_text">book tasting</span></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="button_adj right_button"><a href="#"><span  class="button_text">buzz menu</span></a></span>
+				<span class="button_adj left_button"><a href="#"><span  class="button_text">book now</span></a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="button_adj right_button"><a href="#"><span  class="button_text">options</span></a></span>
 			</div>
 			<div class="latin_div"><span class="latin">Lorem ipsum dolor sit amet,consectetur adipiscing elit. Donec a turpis massa. Maecenas vel sapien hendrerit nisl aliquet elementum ac in erat. o nec fringilla. Maecenas varius vel porta.</span></div>
 	</div>   
