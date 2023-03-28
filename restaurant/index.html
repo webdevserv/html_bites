@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JS"/>
+        <meta name="description" content="Domací asijské bistro - zažij chuť Asie na okraji Prahy!"/>
+        <meta name="author" content="David Poslušný"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet" type="text/css" media="screen"/>
+        <link href="print.css" rel="stylesheet" type="text/css" media="print"/>
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+        <script src="navbar-script.js" defer></script>
+        <noscript>
+            <link href="noscript-styles.css" rel="stylesheet" type="text/css"/>
+        </noscript>
+        <title>Chopsticks Bistro</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="navbar-logo">
+                    <a href="index.html">
+                        <img class="image-logo" src="img/header/brand-logo.png" alt="chopsticks-logo">
+                    </a>
+                </div>
+                <a href="#" class="hamburger">
+                    <span class="layer"></span>
+                    <span class="layer"></span>
+                    <span class="layer"></span>
+                </a>
+                <div class="navbar-items">
+                    <ul>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="content">
+                <div class="content-background">
+                    <img class="content-image" src="img/content/main-page-content.jpg" alt="main-page-content-image">
+                    <img class="content-image-mobile" src="img/content/main-page-content-mobile.jpg" alt="main-page-content-image-mobile">
+                </div>
+                <div class="content-text">
+                    <h1>DOMÁCÍ ASIJSKÉ BISTRO</h1>
+                    <p>Zažij chuť Asie na okraji Prahy!</p>
+                    <p class="link-transition">
+                        &#8595; <a href="#info">Více informací níže</a> &#8595;
+                    </p>
+                </div>
+                <div id="info" class="content-columns">
+                    <div class="column-left" id="col1">
+                        <h2>Autentické pokrmy</h2>
+                        <p>
+                            Pro přípravu všech našich pokrmů využíváme výhradně kvalitní asijské suroviny. Naši zkušení kuchaři se postarají o to, abyste u každého jídla měli unikátní, autentický požitek jako v klasickém vietnamském bistru. U každého pokrmu je také možné nastavit úroveň pikantnosti - od velmi pálivého po nepálivé. Pro zobrazení kompletního jídelního a nápojového lístku klikněte <a class="link-small" href="menu.html">zde</a>.
+                        </p>
+                    </div>
+                    <div class="column-middle" id="col2">
+                        <h2>Široká nabídka</h2>
+                        <p>
+                            Naše stálá nabídka obsahuje přes 23 jídel, které si u nás vždy můžete vychutnat. Pro fajnšmekry máme také připravené <strong>speciální menu</strong>, které momentálně obsahuje 7 jídel, jako například velmi oblíbený hovězí závitek <strong>NEM BÒ</strong> s arašídovou omáčkou. Pro milovníky polévek máme v nabídce speciální polévku <strong>BÚN TÔM ĐẬU PHỤ</strong> - rýžové nudle, tofu, krevety, rajčata, koriandr. Žízní u nás také trpět nebude, připravili jsem si totiž pro vás nápojový lístek obsahující jak nealkoholické nápoje, tak alkoholické nápoje, především široký výběr <strong>vietnamských, japonských a thajských piv.</strong>
+                        </p>
+                    </div>
+                    <div class="column-right" id="col3">
+                        <h2>Útulné prostředí</h2>
+                        <p>
+                            Interiér naší restaurace je navržen tak, aby odrážel klasický vzhled vietnamských bistrem a podniků. Má za účel v každým zákazníkovi vzbudit pocit, že se v takovém místě opravdu nachází. Vnitřek je bohatý na autentické asijské dekorace, exotické květiny a také prvky vietnamského umění, převedším obrazy. V případě pěkného počasí je možné si s jídlem sednou ven na naši zahrádku vybavenou stoly se slunečníky.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-interior">
+                    <img class="content-image-interior" src="img/content/interior.jpg" alt="interior-image">
+                </div>
+                <div class="content-text-interior">
+                    <h1>Máte otázku nebo vám není něco jasné?</h1>
+                    <p>Podívejte se na naše <a class="link-small" href="faq.html">často kladené dotazy</a>, nebo nám přímo napište na <a class="link-small" href="mailto:contactchopsticks@gmail.com">e-mail</a>!</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <div id="footer-author" class="footer-item">
+                    <p>David Poslušný, 2021<a href="https://github.com/itsDaiton"></a></p>
+                </div>
+                <div id="footer-website" class="footer-item">
+                    <p><a class="link-small" href="https://www.chopsticksbistro.cz/">https://www.chopsticksbistro.cz/</a></p>
+                </div>
+                <div id="footer-socials" class="footer-item">
+                    <a href="https://www.instagram.com/chopsticksbistro/">
+                        <img id="ínstagram" src="img/footer/icon-instagram.png" alt="icon-instagram">
+                    </a>
+                    <a href="https://www.facebook.com/ChopsticksBistro/">
+                        <img id="facebook" src="img/footer/icon-facebook.png" alt="icon-facebook">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
