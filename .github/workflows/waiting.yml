@@ -1,5 +1,6 @@
 name: 'Wait'
 description: 'Wait a designated number of milliseconds'
+on: [push]
 inputs:
   milliseconds:  # id of input
     description: 'number of milliseconds to wait'
