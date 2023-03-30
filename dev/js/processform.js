@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@webdevserv 
-alikamal1
-/
-Form_Data_HTTP_POST_Action
-Public
-Fork your own copy of alikamal1/Form_Data_HTTP_POST_Action
-Code
-Issues
-Pull requests
-7
-Actions
-Projects
-Security
-Insights
-Form_Data_HTTP_POST_Action/src/index.js /
-@alikamal1
-alikamal1 update
-Latest commit 407dec8 on Nov 30, 2021
- History
- 1 contributor
-47 lines (38 sloc)  1.21 KB
-
 const core = require('@actions/core');
 const FormData = require('form-data');
 const fs = require('fs');
@@ -75,19 +45,5 @@ async function run() {
 }
 
 run();
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Form_Data_HTTP_POST_Action/index.js at main · alikamal1/Form_Data_HTTP_POST_Action
+
 
