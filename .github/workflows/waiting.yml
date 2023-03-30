@@ -1,6 +1,7 @@
 name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
+description: 'Wait a designated number of milliseconds'
 inputs:
   milliseconds:  # id of input
     description: 'number of milliseconds to wait'
