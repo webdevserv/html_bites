@@ -265,7 +265,7 @@ body, html {
         <p>Currently located in New York.</p>      
         <p>If you're interested in working together or have any questions about my work, please don’t hesitate to get in touch.</p>
         <p><strong>Let me know</strong> if you are interested in receiving my resume and we can talk soon.</p>
-        <form id="commentForm" method="post" action="js/processform.js" enctype="text/plain"> 
+        <form id="commentForm" method="post" action="javascript:process()" enctype="text/plain"> 
         <!--<form id="commentForm" method="post" action="action.php" enctype="text/plain">-->
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name" id="cname"></p>
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email" id="cemail"></p>
@@ -335,7 +335,60 @@ body, html {
     }
     document.getElementById("myLink").click();
 </script>
+<script>
+function process() {
+  const core = require('@actions/core');
+  const FormData = require('form-data');
+  const fs = require('fs');
+  const axios = require('axios');
 
+  async function run() {
+    try {
+      const url = core.getInput('url')
+      const headers = JSON.parse(core.getInput('headers') || '{}')
+      const data = JSON.parse(core.getInput('data') || '{}')
+      const name = core.getInput('name')
+      const file = core.getInput('file')
+
+      console.log(`URL: ${url}`)
+      console.log(`Headers: ${headers}`)
+      console.log(`Data: ${data}`)
+      console.log(`File Name: ${name}`)
+      console.log(`File Path: ${file}`)
+      core.info(`Connecting to endpoint (${url}) ...`)
+
+      const form = new FormData();
+      for (const [key, value] of Object.entries(data)) {
+        form.append(key, value)
+      }
+
+
+      if (name && file) {
+        form.append(name, fs.createReadStream(file));
+      }
+
+      const response = await axios({
+        method: 'POST',
+        url: url,
+        headers: { 'Content-Type': 'multipart/form-data', ...headers },
+        data: form,
+      })
+      
+      console.log(response)
+
+      core.setOutput('response', { 'statusCode': response.statusCode, 'data': response.data });
+    } catch (error) {
+      console.log(error)
+      core.setFailed(error.message);
+    }
+  }
+
+  run();
+}
+
+
+
+</script>
 
 </body>
 </html>
