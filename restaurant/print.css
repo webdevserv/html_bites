@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+h1, h2 {
+    text-align: center;
+}
+.content-image, .content-image-mobile, .content-image-interior {
+    display: none;
+}
+.link-small {
+    color: cornflowerblue;
+}
+.link-small:hover {
+    color: orangered;
+}
+.content-text .link-transition {
+    color: cornflowerblue;
+}
+.link-transition a {
+    color: cornflowerblue;
+}
+.link-transition a:hover {
+    text-decoration: none;
+}
+.content-text {
+    text-align: center;
+}
+.footer {
+    text-align: center;
+    page-break-before: always;
+}
+.navbar-logo {
+    text-align: center;
+}
+#col1, #col2, #col3 {
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#col3 {
+    page-break-after: always;
+}
+.content-text-interior {
+    padding-top: 15px;
+}
+.content-text-interior p{
+    text-align: center;
+}
+#facebook, #instagram {
+    display: none;
+}
+.navbar-items {
+    padding-left: 50px;
+}
+.navbar-items li a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+.navbar-items li a:hover {
+    color: orangered;
+}
+.food-image {
+    text-align: center;
+}
+.food-image img {
+    padding: 25px;
+    width: 300px;
+    height: auto;
+}
+.menu-food ul, .menu-specials ul {
+    list-style: none;
+}
+.menu-food li, .menu-specials li{
+    text-align: center;
+}
+#header-specials {
+    page-break-before: always;
+}
+.menu-header h1 {
+    text-align: center;
+}
+#header-menu {
+    page-break-before: always;
+}
+#header-drinks {
+    page-break-before: always;
+}
+.table-drinks {
+    overflow: hidden;
+    padding: 50px;
+}
+.drinks {
+    width: 100%;
+    border-collapse: collapse;
+}
+.drinks th {
+    border-bottom: 1px solid black;
+    text-align: center;
+    width: 50%;
+}
+.drinks td:nth-child(even) {
+    text-align: center;
+}
+table {
+    page-break-after: always;
+}
+.drinks td{
+    padding: 5px;
+}
+.gallery-image {
+    text-align: center;
+}
+.gallery-image img {
+    padding: 50px;
+    width: 350px;
+    height: auto;
+}
+.gallery-header{
+    page-break-before: always;
+}
+.faq {
+    list-style: none;
+    margin: 0;
+    width: 100vw;
+}
+.faq-content li {
+    width: 100%;
+    margin-top: 75px;
+    margin-bottom: 0;
+}
+.faq-content li h1 {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.faq-content li p {
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.text-line {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.contact-item img {
+    display: none;
+}
+#map {
+    page-break-before: always;
+}
+.map-div {
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.faq-header {
+    page-break-before: always;
+}
