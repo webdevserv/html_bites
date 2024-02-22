@@ -1,0 +1,11 @@
+  name: Form Data Http POST Action
+  inputs:
+    url: 'https://webdevserv.github.io/html_bites/dev/testform.html'
+    name: 'config'
+    file: 'dev/assets/config.json'
+    data: '{"Name":"value_1","key_2": "value_2"}'
+  outputs:
+    response:
+    description: 'The response of POST request'
+  runs:
+    main: 'dev/src/index.js'
